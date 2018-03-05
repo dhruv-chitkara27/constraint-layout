@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:background="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello User"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/ll_first"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        />
+    <LinearLayout
+        android:clickable="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/ll_first"
+        app:layout_constraintBottom_toTopOf="@+id/ll_second"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <ImageView
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_launcher_background"
+            >
+
+        </ImageView>
+
+        <TextView
+
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#eee"
+            />
+
+        <TextView
+            android:id="@+id/tv_first"
+            android:layout_weight="0.8"
+            android:text="First VIew"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLines="1"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:clickable="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/ll_second"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/ll_third"
+        app:layout_constraintTop_toBottomOf="@+id/ll_first"
+        android:weightSum="1"
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+
+        <TextView
+
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#eee"
+            />
+
+        <TextView
+            android:id="@+id/tv_sec"
+            android:text="Second View"
+            android:layout_weight="0.8"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLines="1"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/ll_third"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/ll_second"
+        app:layout_constraintBottom_toTopOf="@+id/ll_forth"
+        android:weightSum="1"
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <ImageView
+            android:src="@drawable/ic_launcher_background"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+
+        <TextView
+
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#eee"
+            />
+
+        <TextView
+            android:id="@+id/tv_cal"
+            android:text="Third View"
+            android:layout_weight="0.8"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:maxLines="1"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/ll_forth"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/ll_third"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <ImageView
+            android:src="@drawable/ic_launcher_background"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+
+        <TextView
+
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#eee"
+            />
+
+        <TextView
+            android:id="@+id/tv_forth"
+            android:layout_weight="0.8"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:text="Forth View"
+            android:maxLines="1"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            />
+    </LinearLayout>
+
+    <TextView
+
+        android:id="@+id/tv_bottom"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_weight="0.8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:text="I am at bottom"
+        android:maxLines="1"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        />
+</android.support.constraint.ConstraintLayout>
